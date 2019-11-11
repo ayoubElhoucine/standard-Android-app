@@ -20,3 +20,12 @@ ButterKnif is an android library provides an easy way to bind views with java/ko
 
 ### 4) Anko library 
 Anko is a Kotlin library which makes Android application development faster and easier , check this for more details https://www.kotlindevelopment.com/why-should-use-anko/
+
+## Application architecture
+the architecture of Standard android app is very sipmle , 
+1) dagger produce a singletone objects and injects theme as modules to it's componentes
+2) SuperActivity and SuperFramgent are tow app componentes that host the dagger dependency injection
+3) make SuperActivity the super class of all the activities so all the activities can acess these modules and the same with    SuperFragment
+
+
+![alt text](https://github.com/ayoubElhoucine/standard-Android-app/blob/master/Standard_Android_App.png)
